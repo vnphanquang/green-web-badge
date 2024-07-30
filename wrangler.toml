@@ -3,6 +3,7 @@ main = "src/index.js"
 compatibility_date = "2024-07-25"
 
 rules = [
- { type = 'Data', globs = ["**/*.otf"], fallthrough = true }
+	{ type = 'Data', globs = ["**/*.otf"], fallthrough = true },
+	{ type = 'Text', globs = ["**/*.svg"], fallthrough = true }
 ]
 
