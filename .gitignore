@@ -31,4 +31,5 @@ vite.config.ts.timestamp-*
 # git secret
 .gitsecret/keys/random_seed
 !*.secret
+.wrangler/
 
