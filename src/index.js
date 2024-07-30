@@ -12,6 +12,12 @@ const app = new Hono();
 const HEIGHT = 95;
 const WIDTH = 200;
 
+app.get('/', (c) => {
+	return c.text(
+		'Provide a url to check. For example, https://green-web-badge.vnphanquang.workers.dev/google.com',
+	);
+});
+
 app.get('/:hostname', async (c) => {
 	const hostname = c.req.param('hostname');
 
